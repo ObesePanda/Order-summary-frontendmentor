@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        /*Primary*/
+        --pale-blue: hsl(225, 100%, 94%);
+        --bright-blue: hsl(245, 75%, 52%);
+        /*Neutral*/
+        --very-pale-blue: hsl(225, 100%, 98%);
+        --desaturated-blue: hsl(224, 23%, 55%);
+        --dark-blue: hsl(223, 47%, 23%);
+        --sm: 14px;
+        --lm: 16px;
+      }
+      body {
+        font-family: "Red Hat Display", sans-serif;
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-color: var(--pale-blue);
+        background-repeat: no-repeat;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
+      .container-main {
+        display: grid;
+        grid-template-rows: 184px auto auto;
+        justify-items: center;
+        width: 375px;
+        height: 600px;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 10px 15px 20px rgb(247, 219, 247);
+      }
+      .container-main-top-image img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+      }
+      .container-details {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .container-details h1 {
+        font-size: 25px;
+        color: var(--dark-blue);
+        font-weight: 900;
+      }
+      .container-details p {
+        font-size: var(--sm);
+        color: var(--desaturated-blue);
+        font-weight: 500;
+        text-align: center;
+        padding: 0 40px 0 40px;
+        margin: 0 0 10px 0;
+      }
+      .container-plan {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        width: 300px;
+        border-radius: 10px;
+        background: var(--very-pale-blue);
+      }
+
+      .container-plan-left h1 {
+        margin: 0;
+        font-size: var(--lm);
+        font-weight: 900;
+        margin: 0 0 0 -20px;
+      }
+      .container-plan-left p {
+        margin: 0 0 0 -20px;
+        font-size: var(--sm);
+        color: var(--desaturated-blue);
+        font-weight: 600;
+      }
+      .container-plan-right a {
+        font-size: var(--sm);
+        color: var(--bright-blue);
+        font-weight: 600;
+      }
+      .container-plan-right a:hover {
+        cursor: pointer;
+        text-decoration: none;
+        color: hsl(236, 76%, 64%);
+      }
+      .container-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .container-button a {
+        color: var(--desaturated-blue);
+        text-decoration: none;
+        font-size: var(--sm);
+        margin-top: 20px;
+        font-weight: 700;
+      }
+      .container-button button {
+        height: 50px;
+        width: 300px;
+        color: white;
+        font-weight: 900;
+        background-color: var(--bright-blue);
+        border-radius: 10px;
+        border: 0;
+        box-shadow: 5px 2px 8px rgb(192, 208, 252);
+        cursor: pointer;
+      }
+      .container-button button:hover {
+        background-color: hsl(236, 76%, 64%);
+        cursor: pointer;
+      }
+      .container-button a:hover {
+        color: black;
+      }
+     
+    </style>
+    <title>Order-summary-component-main</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-main">
+        <div class="container-main-top-image">
+          <img src="./images/illustration-hero.svg" alt="illustration-hero" />
+        </div>
+        <div class="container-details">
+          <h1>Order Summary</h1>
+          <p>
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+        </div>
+        <div class="container-plan">
+          <img src="./images/icon-music.svg" alt="" />
+          <div class="container-plan-left">
+            <h1>Annual Plan</h1>
+            <p>$59.99/year</p>
+          </div>
+          <div class="container-plan-right">
+            <a href="*">Change</a>
+          </div>
+        </div>
+        <div class="container-button">
+          <button>Proceed to Payment</button>
+          <a href="*">Cancel Order</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
